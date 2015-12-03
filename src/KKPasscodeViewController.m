@@ -147,7 +147,7 @@
 	_boxes = [[NSMutableArray alloc] init];
 	
     // Need to make sure everything is visible in landscape mode on small devices.
-    self.isSmallLandscape = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && UIInterfaceOrientationIsLandscape(self.interfaceOrientation));
+    self.isSmallLandscape = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]));
     
     if (_mode == KKPasscodeModeSet) {
         self.navigationItem.title = KKPasscodeLockLocalizedString(@"Set Passcode", @"");
@@ -364,8 +364,15 @@
 	UITableView *oldTableView = [_tableViews objectAtIndex:_currentPanel - 1];
 	UITableView *newTableView = [_tableViews objectAtIndex:_currentPanel];
     
+
+    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height ;
+    CGFloat yOffset = statusBarHeight;
+    if (self.navigationController != nil){
+        yOffset += self.navigationController.navigationBar.frame.size.height;
+    }
+    
 	newTableView.frame = CGRectMake(oldTableView.frame.origin.x + self.view.bounds.size.width,
-                                    oldTableView.frame.origin.y,
+                                    yOffset + oldTableView.frame.origin.y,
                                     oldTableView.frame.size.width,
                                     oldTableView.frame.size.height);
 	
@@ -610,8 +617,10 @@
 - (UIView*)headerViewForTextField:(UITextField*)textField
 {
     [self.view addSubview:textField];
-	UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, 70.0)];
-	UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, self.isSmallLandscape ? 2.0f : 28.0f, self.view.bounds.size.width, 30.0)];
+	UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 145.0, self.view.bounds.size.width, 70.0)];
+    CGFloat smallLandscapeOffset = self.isSmallLandscape ? 2.0f : 28.0f;
+    smallLandscapeOffset = 150.0;
+	UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, smallLandscapeOffset, self.view.bounds.size.width, 30.0)];
 	headerLabel.textColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.4 alpha:1.0];
 	headerLabel.backgroundColor = [UIColor clearColor];
 
@@ -720,7 +729,7 @@
     for (int i = 0; i < kPasscodeBoxesCount; i++) {
         UIImage *boxImage = [self imageFromFrameworkBundleWithName:@"box_empty.png"];
         UIImageView *square = [[UIImageView alloc] initWithImage: boxImage];
-		square.frame = CGRectMake(squareX, self.isSmallLandscape ? 32.0f : 74.0, width, height);
+		square.frame = CGRectMake(squareX, self.isSmallLandscape ? 62.0f : 74.0, width, height);
 		[squareViews addObject:square];
 		squareX += self.isSmallLandscape ? 42.0f : 71.0;
 	}
