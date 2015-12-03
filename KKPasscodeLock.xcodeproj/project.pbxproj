@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA01D0D11C10C20F004E8606 /* KKPasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0D01C10C20F004E8606 /* KKPasscodeLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA01D0D81C10C20F004E8606 /* KKPasscodeLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01D0CD1C10C20F004E8606 /* KKPasscodeLock.framework */; };
 		DA01D0DD1C10C20F004E8606 /* KKPasscodeLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0DC1C10C20F004E8606 /* KKPasscodeLockTests.m */; };
 		DA01D1041C10C3CA004E8606 /* KKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0FC1C10C3CA004E8606 /* KKKeychain.m */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		DA01D0CD1C10C20F004E8606 /* KKPasscodeLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKPasscodeLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA01D0D01C10C20F004E8606 /* KKPasscodeLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPasscodeLock.h; sourceTree = "<group>"; };
 		DA01D0D21C10C20F004E8606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA01D0D71C10C20F004E8606 /* KKPasscodeLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKPasscodeLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01D0DC1C10C20F004E8606 /* KKPasscodeLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPasscodeLockTests.m; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				DA01D1011C10C3CA004E8606 /* KKPasscodeSettingsViewController.m */,
 				DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */,
 				DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */,
-				DA01D0D01C10C20F004E8606 /* KKPasscodeLock.h */,
 				DA01D0D21C10C20F004E8606 /* Info.plist */,
 			);
 			path = KKPasscodeLock;
@@ -121,7 +118,6 @@
 				DA01D1051C10C3CA004E8606 /* KKKeychain.h in Headers */,
 				DA01D10A1C10C3CA004E8606 /* KKPasscodeViewController.h in Headers */,
 				DA01D1061C10C3CA004E8606 /* KKPasscodeLock.h in Headers */,
-				DA01D0D11C10C20F004E8606 /* KKPasscodeLock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
