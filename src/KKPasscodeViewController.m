@@ -304,14 +304,14 @@
     
 	_enterPasscodeTextField.text = @"";
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[self imageFromFrameworkBundleWithName:@"box_empty.png"]];
 	}
 	
     NSInteger _failedAttemptsCount = [[KKKeychain getStringForKey:@"failedAttemptsCount"] integerValue];
     
     _failedAttemptsCount++;
     
-    [KKKeychain setString:[NSString stringWithFormat:@"%d", _failedAttemptsCount] forKey:@"failedAttemptsCount"];
+    [KKKeychain setString:[NSString stringWithFormat:@"%ld", (long)_failedAttemptsCount] forKey:@"failedAttemptsCount"];
 
 	if (_failedAttemptsCount == 1) {
 		_failedAttemptsLabel.text = KKPasscodeLockLocalizedString(@"1 Failed Passcode Attempt", @"");
@@ -369,8 +369,8 @@
                                     oldTableView.frame.size.width,
                                     oldTableView.frame.size.height);
 	
-	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+    for (int i = 0; i < kPasscodeBoxesCount; i++) {
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[self imageFromFrameworkBundleWithName:@"box_empty.png"]];
 	}
 	
 	[UIView beginAnimations:@"" context:nil];
@@ -393,9 +393,8 @@
 	UITableView *oldTableView = [_tableViews objectAtIndex:_currentPanel + 1];
 	UITableView *newTableView = [_tableViews objectAtIndex:_currentPanel];
 	newTableView.frame = CGRectMake(oldTableView.frame.origin.x - self.view.bounds.size.width, oldTableView.frame.origin.y, oldTableView.frame.size.width, oldTableView.frame.size.height);
-	
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[self imageFromFrameworkBundleWithName:@"box_empty.png"]];
 	}
 	
 	[UIView beginAnimations:@"" context:nil];
@@ -543,7 +542,7 @@
             if ([passcode isEqualToString:_setPasscodeTextField.text]) {
                 _setPasscodeTextField.text = @"";
                 for (int i = 0; i < kPasscodeBoxesCount; i++) {
-                    [[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+                    [[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[self imageFromFrameworkBundleWithName:@"box_empty.png"]];
                 }
                 _passcodeConfirmationWarningLabel.text = KKPasscodeLockLocalizedString(@"Enter a different passcode. You cannot re-use the same passcode.", @"");
                 _passcodeConfirmationWarningLabel.frame = CGRectMake(0.0, 132.0, self.view.bounds.size.width, 60.0);
@@ -718,9 +717,9 @@
     
     CGFloat width = self.isSmallLandscape ? kPasscodeBoxWidth * 0.6f : kPasscodeBoxWidth;
     CGFloat height = self.isSmallLandscape ? kPasscodeBoxHeight * 0.6f : kPasscodeBoxHeight;
-	
-	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		UIImageView *square = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+    for (int i = 0; i < kPasscodeBoxesCount; i++) {
+        UIImage *boxImage = [self imageFromFrameworkBundleWithName:@"box_empty.png"];
+        UIImageView *square = [[UIImageView alloc] initWithImage: boxImage];
 		square.frame = CGRectMake(squareX, self.isSmallLandscape ? 32.0f : 74.0, width, height);
 		[squareViews addObject:square];
 		squareX += self.isSmallLandscape ? 42.0f : 71.0;
@@ -728,6 +727,12 @@
 	return [NSArray arrayWithArray:squareViews];
 }
 
+-(UIImage *)imageFromFrameworkBundleWithName:(NSString*)name
+{
+    NSBundle *frameWorkBundle = [NSBundle bundleForClass:[self class]];
+    NSString *keypath = [NSString stringWithFormat: @"KKPasscodeLock.bundle/%@", name];
+    return [UIImage imageNamed:keypath inBundle:frameWorkBundle compatibleWithTraitCollection:nil];
+}
 #pragma mark -
 #pragma mark UITableViewDataSource methods
 
@@ -790,9 +795,9 @@
     for (int i = 0; i < kPasscodeBoxesCount; i++) {
         UIImageView *square = [[_boxes objectAtIndex:_currentPanel] objectAtIndex:i];
         if (i < [result length]) {
-            square.image = [UIImage imageNamed:@"KKPasscodeLock.bundle/box_filled.png"];
+            square.image = [self imageFromFrameworkBundleWithName:@"box_filled.png"];
         } else {
-            square.image = [UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"];
+            square.image = [self imageFromFrameworkBundleWithName:@"box_empty.png"];
         }
     }
     

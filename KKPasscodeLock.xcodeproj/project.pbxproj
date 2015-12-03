@@ -18,6 +18,11 @@
 		DA01D10A1C10C3CA004E8606 /* KKPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA01D10B1C10C3CA004E8606 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */; };
 		DA01D1251C10CA17004E8606 /* KKPasscodeLockUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1241C10CA17004E8606 /* KKPasscodeLockUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA01D13C1C10D1AE004E8606 /* KKPasscodeLock.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA01D13B1C10D1AE004E8606 /* KKPasscodeLock.bundle */; };
+		DA01D13E1C10D8A6004E8606 /* box_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DA01D13D1C10D8A6004E8606 /* box_empty.png */; };
+		DA01D1401C10D8AC004E8606 /* box_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA01D13F1C10D8AC004E8606 /* box_empty@2x.png */; };
+		DA01D1421C10D8B2004E8606 /* box_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = DA01D1411C10D8B2004E8606 /* box_filled.png */; };
+		DA01D1441C10D8B8004E8606 /* box_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA01D1431C10D8B8004E8606 /* box_filled@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeViewController.m; path = src/KKPasscodeViewController.m; sourceTree = SOURCE_ROOT; };
 		DA01D1241C10CA17004E8606 /* KKPasscodeLockUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPasscodeLockUmbrella.h; sourceTree = "<group>"; };
 		DA01D1371C10D061004E8606 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DA01D13B1C10D1AE004E8606 /* KKPasscodeLock.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KKPasscodeLock.bundle; path = src/KKPasscodeLock.bundle; sourceTree = SOURCE_ROOT; };
+		DA01D13D1C10D8A6004E8606 /* box_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_empty.png; path = src/KKPasscodeLock.bundle/box_empty.png; sourceTree = "<group>"; };
+		DA01D13F1C10D8AC004E8606 /* box_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "box_empty@2x.png"; path = "src/KKPasscodeLock.bundle/box_empty@2x.png"; sourceTree = "<group>"; };
+		DA01D1411C10D8B2004E8606 /* box_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_filled.png; path = src/KKPasscodeLock.bundle/box_filled.png; sourceTree = "<group>"; };
+		DA01D1431C10D8B8004E8606 /* box_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "box_filled@2x.png"; path = "src/KKPasscodeLock.bundle/box_filled@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,10 @@
 		DA01D0C31C10C20F004E8606 = {
 			isa = PBXGroup;
 			children = (
+				DA01D1431C10D8B8004E8606 /* box_filled@2x.png */,
+				DA01D1411C10D8B2004E8606 /* box_filled.png */,
+				DA01D13F1C10D8AC004E8606 /* box_empty@2x.png */,
+				DA01D13D1C10D8A6004E8606 /* box_empty.png */,
 				DA01D1371C10D061004E8606 /* module.modulemap */,
 				DA01D1241C10CA17004E8606 /* KKPasscodeLockUmbrella.h */,
 				DA01D0CF1C10C20F004E8606 /* KKPasscodeLock */,
@@ -90,6 +104,7 @@
 		DA01D0CF1C10C20F004E8606 /* KKPasscodeLock */ = {
 			isa = PBXGroup;
 			children = (
+				DA01D13B1C10D1AE004E8606 /* KKPasscodeLock.bundle */,
 				DA01D0FC1C10C3CA004E8606 /* KKKeychain.m */,
 				DA01D0FD1C10C3CA004E8606 /* KKKeychain.h */,
 				DA01D0FE1C10C3CA004E8606 /* KKPasscodeLock.h */,
@@ -136,8 +151,8 @@
 			buildPhases = (
 				DA01D0C81C10C20F004E8606 /* Sources */,
 				DA01D0C91C10C20F004E8606 /* Frameworks */,
-				DA01D0CA1C10C20F004E8606 /* Headers */,
 				DA01D0CB1C10C20F004E8606 /* Resources */,
+				DA01D0CA1C10C20F004E8606 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -206,6 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA01D13C1C10D1AE004E8606 /* KKPasscodeLock.bundle in Resources */,
+				DA01D13E1C10D8A6004E8606 /* box_empty.png in Resources */,
+				DA01D1401C10D8AC004E8606 /* box_empty@2x.png in Resources */,
+				DA01D1421C10D8B2004E8606 /* box_filled.png in Resources */,
+				DA01D1441C10D8B8004E8606 /* box_filled@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aporat.KKPasscodeLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -362,6 +383,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = KKPasscodeLock/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -370,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aporat.KKPasscodeLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
