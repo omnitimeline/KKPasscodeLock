@@ -1,0 +1,11 @@
+framework module KKPasscodeLock {
+    umbrella header "KKPasscodeLockUmbrella.h"
+    
+    header "KKPasscodeLock.h"
+    header "KKKeychain.h"
+    header "KKPasscodeSettingsViewController.h"
+    header "KKPasscodeViewController.h"
+    
+    export *
+    module * { export * }
+}

@@ -19,15 +19,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "KKPasscodeViewController.h"
-#import <KKPasscodeLock/KKKeychain.h>
-#import <KKPasscodeLock/KKPasscodeSettingsViewController.h>
-#import <KKPasscodeLock/KKPasscodeViewController.h>
 
-//! Project version number for KKPasscodeLock.
-FOUNDATION_EXPORT double KKPasscodeLockVersionNumber;
-
-//! Project version string for KKPasscodeLock.
-FOUNDATION_EXPORT const unsigned char KKPasscodeLockVersionString[];
 
 
 extern CGFloat const kPasscodeBlockDisabled;
