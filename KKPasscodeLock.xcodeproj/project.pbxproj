@@ -10,14 +10,14 @@
 		DA01D0D11C10C20F004E8606 /* KKPasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0D01C10C20F004E8606 /* KKPasscodeLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA01D0D81C10C20F004E8606 /* KKPasscodeLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01D0CD1C10C20F004E8606 /* KKPasscodeLock.framework */; };
 		DA01D0DD1C10C20F004E8606 /* KKPasscodeLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0DC1C10C20F004E8606 /* KKPasscodeLockTests.m */; };
-		DA01D0EF1C10C221004E8606 /* KKKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0E71C10C221004E8606 /* KKKeychain.h */; };
-		DA01D0F01C10C221004E8606 /* KKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0E81C10C221004E8606 /* KKKeychain.m */; };
-		DA01D0F11C10C221004E8606 /* KKPasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0E91C10C221004E8606 /* KKPasscodeLock.h */; };
-		DA01D0F21C10C221004E8606 /* KKPasscodeLock.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0EA1C10C221004E8606 /* KKPasscodeLock.m */; };
-		DA01D0F31C10C221004E8606 /* KKPasscodeSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0EB1C10C221004E8606 /* KKPasscodeSettingsViewController.h */; };
-		DA01D0F41C10C221004E8606 /* KKPasscodeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0EC1C10C221004E8606 /* KKPasscodeSettingsViewController.m */; };
-		DA01D0F51C10C221004E8606 /* KKPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0ED1C10C221004E8606 /* KKPasscodeViewController.h */; };
-		DA01D0F61C10C221004E8606 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0EE1C10C221004E8606 /* KKPasscodeViewController.m */; };
+		DA01D1041C10C3CA004E8606 /* KKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0FC1C10C3CA004E8606 /* KKKeychain.m */; };
+		DA01D1051C10C3CA004E8606 /* KKKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0FD1C10C3CA004E8606 /* KKKeychain.h */; };
+		DA01D1061C10C3CA004E8606 /* KKPasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D0FE1C10C3CA004E8606 /* KKPasscodeLock.h */; };
+		DA01D1071C10C3CA004E8606 /* KKPasscodeLock.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D0FF1C10C3CA004E8606 /* KKPasscodeLock.m */; };
+		DA01D1081C10C3CA004E8606 /* KKPasscodeSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1001C10C3CA004E8606 /* KKPasscodeSettingsViewController.h */; };
+		DA01D1091C10C3CA004E8606 /* KKPasscodeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1011C10C3CA004E8606 /* KKPasscodeSettingsViewController.m */; };
+		DA01D10A1C10C3CA004E8606 /* KKPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */; };
+		DA01D10B1C10C3CA004E8606 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +37,14 @@
 		DA01D0D71C10C20F004E8606 /* KKPasscodeLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKPasscodeLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01D0DC1C10C20F004E8606 /* KKPasscodeLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPasscodeLockTests.m; sourceTree = "<group>"; };
 		DA01D0DE1C10C20F004E8606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA01D0E71C10C221004E8606 /* KKKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKKeychain.h; path = ../../KKKeychain.h; sourceTree = "<group>"; };
-		DA01D0E81C10C221004E8606 /* KKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKKeychain.m; path = ../../KKKeychain.m; sourceTree = "<group>"; };
-		DA01D0E91C10C221004E8606 /* KKPasscodeLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeLock.h; path = ../../KKPasscodeLock.h; sourceTree = "<group>"; };
-		DA01D0EA1C10C221004E8606 /* KKPasscodeLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeLock.m; path = ../../KKPasscodeLock.m; sourceTree = "<group>"; };
-		DA01D0EB1C10C221004E8606 /* KKPasscodeSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeSettingsViewController.h; path = ../../KKPasscodeSettingsViewController.h; sourceTree = "<group>"; };
-		DA01D0EC1C10C221004E8606 /* KKPasscodeSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeSettingsViewController.m; path = ../../KKPasscodeSettingsViewController.m; sourceTree = "<group>"; };
-		DA01D0ED1C10C221004E8606 /* KKPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeViewController.h; path = ../../KKPasscodeViewController.h; sourceTree = "<group>"; };
-		DA01D0EE1C10C221004E8606 /* KKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeViewController.m; path = ../../KKPasscodeViewController.m; sourceTree = "<group>"; };
+		DA01D0FC1C10C3CA004E8606 /* KKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKKeychain.m; path = src/KKKeychain.m; sourceTree = SOURCE_ROOT; };
+		DA01D0FD1C10C3CA004E8606 /* KKKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKKeychain.h; path = src/KKKeychain.h; sourceTree = SOURCE_ROOT; };
+		DA01D0FE1C10C3CA004E8606 /* KKPasscodeLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeLock.h; path = src/KKPasscodeLock.h; sourceTree = SOURCE_ROOT; };
+		DA01D0FF1C10C3CA004E8606 /* KKPasscodeLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeLock.m; path = src/KKPasscodeLock.m; sourceTree = SOURCE_ROOT; };
+		DA01D1001C10C3CA004E8606 /* KKPasscodeSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeSettingsViewController.h; path = src/KKPasscodeSettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		DA01D1011C10C3CA004E8606 /* KKPasscodeSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeSettingsViewController.m; path = src/KKPasscodeSettingsViewController.m; sourceTree = SOURCE_ROOT; };
+		DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeViewController.h; path = src/KKPasscodeViewController.h; sourceTree = SOURCE_ROOT; };
+		DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeViewController.m; path = src/KKPasscodeViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +87,14 @@
 		DA01D0CF1C10C20F004E8606 /* KKPasscodeLock */ = {
 			isa = PBXGroup;
 			children = (
-				DA01D0E71C10C221004E8606 /* KKKeychain.h */,
-				DA01D0E81C10C221004E8606 /* KKKeychain.m */,
-				DA01D0E91C10C221004E8606 /* KKPasscodeLock.h */,
-				DA01D0EA1C10C221004E8606 /* KKPasscodeLock.m */,
-				DA01D0EB1C10C221004E8606 /* KKPasscodeSettingsViewController.h */,
-				DA01D0EC1C10C221004E8606 /* KKPasscodeSettingsViewController.m */,
-				DA01D0ED1C10C221004E8606 /* KKPasscodeViewController.h */,
-				DA01D0EE1C10C221004E8606 /* KKPasscodeViewController.m */,
+				DA01D0FC1C10C3CA004E8606 /* KKKeychain.m */,
+				DA01D0FD1C10C3CA004E8606 /* KKKeychain.h */,
+				DA01D0FE1C10C3CA004E8606 /* KKPasscodeLock.h */,
+				DA01D0FF1C10C3CA004E8606 /* KKPasscodeLock.m */,
+				DA01D1001C10C3CA004E8606 /* KKPasscodeSettingsViewController.h */,
+				DA01D1011C10C3CA004E8606 /* KKPasscodeSettingsViewController.m */,
+				DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */,
+				DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */,
 				DA01D0D01C10C20F004E8606 /* KKPasscodeLock.h */,
 				DA01D0D21C10C20F004E8606 /* Info.plist */,
 			);
@@ -117,10 +117,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA01D0F31C10C221004E8606 /* KKPasscodeSettingsViewController.h in Headers */,
-				DA01D0EF1C10C221004E8606 /* KKKeychain.h in Headers */,
-				DA01D0F51C10C221004E8606 /* KKPasscodeViewController.h in Headers */,
-				DA01D0F11C10C221004E8606 /* KKPasscodeLock.h in Headers */,
+				DA01D1081C10C3CA004E8606 /* KKPasscodeSettingsViewController.h in Headers */,
+				DA01D1051C10C3CA004E8606 /* KKKeychain.h in Headers */,
+				DA01D10A1C10C3CA004E8606 /* KKPasscodeViewController.h in Headers */,
+				DA01D1061C10C3CA004E8606 /* KKPasscodeLock.h in Headers */,
 				DA01D0D11C10C20F004E8606 /* KKPasscodeLock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,10 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA01D0F61C10C221004E8606 /* KKPasscodeViewController.m in Sources */,
-				DA01D0F21C10C221004E8606 /* KKPasscodeLock.m in Sources */,
-				DA01D0F41C10C221004E8606 /* KKPasscodeSettingsViewController.m in Sources */,
-				DA01D0F01C10C221004E8606 /* KKKeychain.m in Sources */,
+				DA01D10B1C10C3CA004E8606 /* KKPasscodeViewController.m in Sources */,
+				DA01D1071C10C3CA004E8606 /* KKPasscodeLock.m in Sources */,
+				DA01D1091C10C3CA004E8606 /* KKPasscodeSettingsViewController.m in Sources */,
+				DA01D1041C10C3CA004E8606 /* KKKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +408,7 @@
 				DA01D0E31C10C20F004E8606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA01D0E41C10C20F004E8606 /* Build configuration list for PBXNativeTarget "KKPasscodeLockTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				DA01D0E61C10C20F004E8606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
