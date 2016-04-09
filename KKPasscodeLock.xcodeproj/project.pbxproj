@@ -16,7 +16,7 @@
 		DA01D1081C10C3CA004E8606 /* KKPasscodeSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1001C10C3CA004E8606 /* KKPasscodeSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA01D1091C10C3CA004E8606 /* KKPasscodeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1011C10C3CA004E8606 /* KKPasscodeSettingsViewController.m */; };
 		DA01D10A1C10C3CA004E8606 /* KKPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1021C10C3CA004E8606 /* KKPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA01D10B1C10C3CA004E8606 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */; };
+		DA01D10B1C10C3CA004E8606 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01D1031C10C3CA004E8606 /* KKPasscodeViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		DA01D1251C10CA17004E8606 /* KKPasscodeLockUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA01D1241C10CA17004E8606 /* KKPasscodeLockUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA01D13C1C10D1AE004E8606 /* KKPasscodeLock.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA01D13B1C10D1AE004E8606 /* KKPasscodeLock.bundle */; };
 		DA01D13E1C10D8A6004E8606 /* box_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DA01D13D1C10D8A6004E8606 /* box_empty.png */; };
@@ -349,6 +349,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
